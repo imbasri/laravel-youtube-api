@@ -1,10 +1,39 @@
-
 ## Laravel and Inertia.js with React
 
 This project uses Laravel with Inertia.js and React to create a modern single-page application (SPA).
 
+### Technologies Used
 
-### Demo
+<div align="center">
+
+|                                                                                   |                                                                          |
+| :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| <img src="https://laravel.com/img/logomark.min.svg" height="100px" width="100px"><br>Laravel | <img src="https://reactjs.org/logo-og.png" height="100px" width="100px"><br>React |
+
+</div>
+
+### Demo API
+
+```
+-- ROUTE WEB API (VIEW) --
+
+| HTTP Method | Endpoint       | Description                  |
+|-------------|----------------|------------------------------|
+| GET         | /              | Display the dashboard        |
+| GET         | /{dashboard}   | Display a specific dashboard |
+                               | Default to dashboard         |
+| GET         | /report        | Display the report page      |
+| GET         | /management    | Display the management page  |
+```
+
+```
+-- ROUTE API (ONLY API) --
+| HTTP Method | Endpoint                        | Description                       |
+|-------------|---------------------------------|-----------------------------------|
+| GET         | /youtube/channel/{channel_id}   | Get details of a specific channel |
+| GET         | /youtube/videos/{channel_id}    | Get videos of a specific channel  |
+| GET         | /youtube/statistic/{channel_id} | Get statistics of a specific channel |
+```
 
 #### Image
 
@@ -13,8 +42,6 @@ This project uses Laravel with Inertia.js and React to create a modern single-pa
 #### Video
 
 ![Demo Video](/demo/Demo.gif)
-
-
 
 ### Installation
 
@@ -46,6 +73,7 @@ To get started, follow these steps:
 ### Usage
 
 To start the development server, run:
+
 ```
 php artisan serve
 npm run dev
@@ -53,7 +81,6 @@ npm run dev
 
 ### Resources
 
-- [Laravel Documentation](https://laravel.com/docs)
-- [Inertia.js Documentation](https://inertiajs.com/)
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-
+-   [Laravel Documentation](https://laravel.com/docs)
+-   [Inertia.js Documentation](https://inertiajs.com/)
+-   [React Documentation](https://reactjs.org/docs/getting-started.html)
