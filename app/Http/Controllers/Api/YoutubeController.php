@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Exceptions\CustomException;
-use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
@@ -11,9 +10,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Throwable;
 
-use function PHPSTORM_META\map;
 
-class YoutubeController extends Controller
+class YoutubeController
 {
     protected $baseUrl = 'https://youtube.googleapis.com/youtube/v3/';
 
